@@ -21,7 +21,10 @@ pipeline
             {
                 when
                 {
-                    not branch "master"
+					not
+					{
+						branch "master"
+					 }
                 }
                 steps
                 {
